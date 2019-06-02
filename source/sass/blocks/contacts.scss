@@ -1,0 +1,10 @@
+.contacts-text {
+	margin-right: 40px;
+	font-size: 14px;
+	font-weight: 700;
+	color: $white-color;
+
+	&:last-of-type {
+		margin-right: 60px;
+	}
+}
