@@ -1,12 +1,11 @@
 .page-header {
-	min-height: 735px;
-	padding-top: 10px;
-
+	position: relative;
 	background-color: $blue-bg;
 }
 
 .page-header__container {
-	padding: 0;
+	position: relative;
+	padding: 0;	
 }
 
 .page-header__logo {
@@ -22,21 +21,68 @@
 	display: none;
 }
 
-@media (min-width: $tablet-width) {
-	.page-header {
-		padding-top: 15px;
-	}
+.page-header__slider-picture {
+	max-height: 735px;
 
+	overflow: hidden;
+}
+
+.page-header__slider-text {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+	padding-top: 60px;
+	padding-left: 21%;
+	padding-right: 2%;
+	width: 70%;
+	background-color: $dark-blue-bg;	
+}
+
+.page-header__text {
+	margin-bottom: 35px;
+
+	color: $white-color;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.page-header__slider-image {
+	display: block;	
+}
+
+.page-header__button {
+	margin-bottom: 45px;
+	padding: 13px 24px;
+
+	border-radius: 10px;
+	background-color: $yellow;
+	color: $text-color;
+	text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+	
 	.page-header__container {
 		padding-left: 15px;
 		padding-right: 15px;
 		display: flex;
 		flex-direction: column;
+
+		margin-top: 0px;
+		z-index: 1;
 	}
 
 	.page-header__wrap {
 		display: flex;
 		justify-content: space-between;
+		position: absolute;
+
+		width: 100%;
+
+		top: 15px;
+		left: 0;
 	}
 
 	.page-header__context-wrap {
@@ -47,6 +93,7 @@
 	.page-header__contacts {
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 
 		margin-bottom: 15px;
 	}

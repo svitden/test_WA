@@ -10,7 +10,8 @@
   "author": "Svitlana Denysenko",
   "license": "ISC",
   "dependencies": {
-    "gulp-install": "^1.1.0"
+    "gulp-install": "^1.1.0",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "9.5.x",

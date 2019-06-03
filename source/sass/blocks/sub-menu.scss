@@ -1,16 +1,40 @@
 .sub-menu__list {
-	@include margin0-padding0;
-	
+	@include margin0-padding0;	
 
 	list-style: none;
 }
 
 .sub-menu__item {
 	padding: 5px 0 5px 10px;
+	
 }
 
 .sub-menu__item > a {	
 	font-size: 14px;
 	color: $text-color;
 	text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+	.sub-menu__list {
+		margin-top: 46px;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		background-color: $blue-bg-80;
+	}
+
+	.sub-menu__item {
+		padding: 7px 30px 8px 30px;
+
+		&:hover {
+			background-color: $blue-bg;
+		}
+	}
+
+	.sub-menu__item > a {	
+		font-size: 14px;
+		color: $white-color;
+		white-space: nowrap;
+		text-decoration: none;
+	}	
 }

@@ -8,7 +8,7 @@
 	display: flex;
 	flex-direction: column;
 	
-	list-style: none;
+	list-style: none;	
 }
 
 .main-nav__item {
@@ -42,22 +42,35 @@
 
 	.main-nav__list {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.main-nav__item {
 		position: relative;
+		padding: 13px 24px;
 
 		border: none;
+		border-radius: 10px;
+
+		&:hover {
+			background-color: $yellow-dark;
+		}
+
+		&:hover .main-nav__sub-menu {
+			display: block;
+		}
 	}
 
 	.main-nav__sub-menu {
+		display: none;
 		content: "";
 		position: absolute;
 
 		top: 0;
     left: 0;
     // width: 100%;
-    // height: 100%;
+		// height: 100%;
+		z-index: 2;
 	}
 	
 }
