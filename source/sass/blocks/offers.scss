@@ -1,0 +1,276 @@
+.offers {
+  display: flex;
+  padding: 45px 0 55px;
+}
+
+.offers__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.offers__links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.offers__link {
+  margin-bottom: 15px;
+  margin-right: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.offers__link--clicked {
+  color: $yellow;
+}
+
+.offers__link a:last-child {
+  margin-right: 0;
+}
+
+.offers__list {  
+  width: 100%;
+}
+
+.offers__item {
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;  
+
+  background-color: $light-grey;
+  border-radius: 10px;
+}
+
+.offers__picture {
+  align-self: center;
+  margin-bottom: 5px;
+  max-width: 275px;
+  height: 183px;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offers__picture img {  
+  width: auto;
+  height: 100%;
+}
+
+.offers__text-wrap {
+  display: flex;
+  flex-direction: column;  
+
+  margin-top: 5px;  
+}
+
+.offers__text-first {
+  align-self: center;
+  padding-bottom: 7px;
+  margin-bottom: 15px;  
+
+  border-bottom: 1px solid $dark-grey-10;
+}
+
+.offers__text-name {
+  margin-bottom: 3px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.offers__text-date {
+  font-size: 14px;
+  color: $text-grey-dark;
+}
+
+.offers__text {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  color: $text-grey-dark;
+}
+
+.offers__text-third {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.offers__text-price {
+  font-size: 20px;
+}
+
+.offers__text-price span {
+  font-size: 11px;
+  color: $text-grey-light;
+  vertical-align: super; 
+}
+
+.offers__text-button {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+
+  width: 37px;
+  height: 37px;
+
+  background-color: $yellow;
+  border-radius: 50%;
+
+  cursor: pointer;
+  
+  ::after {
+    position: absolute;
+    content: "";
+
+    top: 13px;
+    left: 11px;
+
+    width: 10px;
+    height: 10px;
+
+    border-right: 1px solid $grey-arrow;
+    border-top: 1px solid $grey-arrow;
+    transform: rotate(45deg);
+  }
+}
+
+.offers__text-button :hover{
+  background-color: $yellow-dark;
+}
+
+@media (min-width: $pre-tablet-width) {
+  .offers {
+    display: flex;
+    padding: 65px 0 75px;
+  }
+
+  .offers__container {
+    max-width: 820px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .offers__links {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .offers__link {
+    margin-bottom: 0;
+    margin-right: 30px;
+
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .offers__item {
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;    
+
+    background-color: $light-grey;
+    border-radius: 10px;
+  }
+
+  .offers__picture {
+    max-width: 187px;
+    max-height: 175px;    
+    margin-bottom: 0;
+    margin-right: 30px;
+
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .offers__picture img {  
+    width: auto;
+    height: 100%;
+  }
+
+  .offers__text-wrap {
+    align-items: flex-start;
+    flex: 1;
+    margin-top: 5px;    
+  }
+
+  .offers__text-first {
+    align-self: auto;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid $dark-grey-10;
+  }
+
+  .offers__text-name {
+    margin-bottom: 3px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .offers__text-date {
+    font-size: 14px;
+    color: $text-grey-dark;
+  }
+
+  .offers__text-third {
+    display: flex;
+  }
+
+  .offers__text-price {
+    font-size: 20px;
+  }
+
+  .offers__text-price span {
+    font-size: 11px;
+    color: $text-grey-light;
+    vertical-align: super; 
+  }
+}
+
+@media (min-width:  1289px) {
+  .offers__container {
+    max-width: 100%;
+  }
+  .offers__item {
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+
+    background-color: $light-grey;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers__container {
+    max-width: 100%;
+  }
+
+  .offers__item {
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    background-color: $light-grey;
+    border-radius: 10px;
+  }
+}

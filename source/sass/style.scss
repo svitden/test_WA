@@ -10,12 +10,15 @@
 @import "./blocks/social-list.scss";
 @import "./blocks/sub-menu.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/main.scss";
+@import "./blocks/offers.scss";
 
 @import "./blocks/page-footer.scss";
+@import "./blocks/slick-style.scss";
 
 body {
 	@include margin0-padding0;
-  min-width: 320px;
+  min-width: 290px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;

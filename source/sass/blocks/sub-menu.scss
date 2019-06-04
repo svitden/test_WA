@@ -24,11 +24,11 @@
 	}
 
 	.sub-menu__item {
-		padding: 7px 30px 8px 30px;
+		padding: 7px 30px 8px 30px;		
+	}
 
-		&:hover {
-			background-color: $blue-bg;
-		}
+	.sub-menu__item:hover {		
+		background-color: $blue-bg-darker;		
 	}
 
 	.sub-menu__item > a {	

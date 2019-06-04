@@ -34,10 +34,8 @@
 				</a>
 				<div class="page-header__context-wrap">
 					<div class="page-header__contacts">
-						<p class="contacts-text">г. Харьков, ул. Мироносицкая 10а</p>
-						<a class="contacts-text contact-tel" href="tel:+38(099)9908100">							
-							+38 (099) 990-81-00 (viber, telegram)
-						</a>						
+						<div class="contact-address"><span></span>г. Харьков, ул. Мироносицкая 10а</div>
+						<a class="contact-tel" href="tel:+38(099)9908100"><span></span>+38 (099) 990-81-00 (viber, telegram)</a>						
 						<div class="page-header__social-list social-list">
 							<a class="social-item social-facebook" href="https://www.facebook.com/">
 								<span class="visually-hidden">Фейсбук</span>
@@ -104,58 +102,120 @@
 							</li>
 						</ul>
 					</nav>
-				</div>
+				</div>				
 			</div>
 		</div>
 
 		<div class="page-header__slider">
 			<div>
 				<div class="page-header__slider-picture">
-					<img class="page-header__slider-image" src="./img/banner1-desktop.jpg" alt="Берег тропического острова">
-				</div>
-				<div class="page-header__slider-text"> 
-					<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
-					<a href="#" class="page-header__button">Получить предложение</a>
-				</div>
-
-				
+					<img class="page-header__slider-image" data-lazy="./img/banner1-desktop.jpg" src="./img/banner1-desktop.jpg" alt="Берег тропического острова">
+					<div class="page-header__slider-text">
+						<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
+						<a href="#" class="page-header__button">Получить предложение</a>
+					</div>
+				</div>			
 			</div>
 			<div>
-				<img class="page-header__slider-image" src="./img/banner2-desktop.jpg" alt="Под водой">
-				<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
-				<a href="#" class="page-header__button">Получить предложение</a>
+				<div class="page-header__slider-picture">
+					<img class="page-header__slider-image" data-lazy="./img/banner2-desktop.jpg" src="./img/banner2-desktop.jpg" alt="Под водой">
+					<div class="page-header__slider-text">
+						<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
+						<a href="#" class="page-header__button">Получить предложение</a>
+					</div>
+				</div>
 			</div>
 			<div>
-				<img class="page-header__slider-image" src="./img/banner3-desktop.jpg" alt="Пирамины">
-				<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
-				<a href="#" class="page-header__button">Получить предложение</a>
+				<div class="page-header__slider-picture">
+					<img class="page-header__slider-image" data-lazy="./img/banner3-desktop.jpg" src="./img/banner3-desktop.jpg" alt="Пирамины">
+					<div class="page-header__slider-text">
+						<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
+						<a href="#" class="page-header__button">Получить предложение</a>
+					</div>
+				</div>
 			</div>
-		</div>
+		</div>		
 	</header>
 
 	<main class="main">
 
 		<section class="offers">
-			<div class="container">
+			<div class="offers__container">
 				<h2 class="visually-hidden">Горящие и популярные туры</h2>
 				<div class="offers__links">
-					<a href="#">Горящие туры</a>
-					<a href="#">Популярные туры</a>
+					<a class="offers__link offers__link--clicked" href="#">Горящие туры</a>
+					<a class="offers__link" href="#">Популярные туры</a>
 				</div>
 				<div class="offers__list">
-					<div class="offers__item">
-						<div class="offers__picture">
-							<img src="" alt="Голубая лагуна">
-						</div>
-						<div class="offers__text-wrap">
-							<div>
-								<p>8 марта в Cyrene Sharm hotel</p>
-								<p>(12.03.2018 — 19.03.2018)</p>
+					<div>
+						<div class="offers__item">
+							<div class="offers__picture">
+								<img src="./img/hots1-desktop.jpg" alt="Голубая лагуна">
 							</div>
-							<p>Перелёт, питание по системе all inclusive, трансфер</p>
-							<div>
-								<p>1 259 грн <span>/за 1 человека</span></p>
-								<div>Подробнее</div>
+							<div class="offers__text-wrap">
+								<div class="offers__text-first">
+									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
+									<p class="offers__text-date">(12.03.2018 — 19.03.2018)</p>
+								</div>
+								<p class="offers__text">Перелёт, питание по системе all inclusive, трансфер</p>
+								<div class="offers__text-third">
+									<p class="offers__text-price">1 259 грн <span>/за 1 человека</span></p>
+									<div class="offers__text-button"><span>Подробнее</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="offers__item">
+							<div class="offers__picture">
+								<img src="./img/hots2-desktop.jpg" alt="Голубая лагуна">
+							</div>
+							<div class="offers__text-wrap">
+								<div class="offers__text-first">
+									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
+									<p class="offers__text-date">(12.03.2018 — 19.03.2018)</p>
+								</div>
+								<p class="offers__text">Перелёт, питание по системе all inclusive, трансфер</p>
+								<div class="offers__text-third">
+									<p class="offers__text-price">1 259 грн <span>/за 1 человека</span></p>
+									<div class="offers__text-button"><span>Подробнее</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="offers__item">
+							<div class="offers__picture">
+								<img src="./img/hots1-desktop.jpg" alt="Голубая лагуна">
+							</div>
+							<div class="offers__text-wrap">
+								<div class="offers__text-first">
+									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
+									<p class="offers__text-date">(12.03.2018 — 19.03.2018)</p>
+								</div>
+								<p class="offers__text">Перелёт, питание по системе all inclusive, трансфер</p>
+								<div class="offers__text-third">
+									<p class="offers__text-price">1 259 грн <span>/за 1 человека</span></p>
+									<div class="offers__text-button"><span>Подробнее</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="offers__item">
+							<div class="offers__picture">
+								<img src="./img/hots2-desktop.jpg" alt="Голубая лагуна">
+							</div>
+							<div class="offers__text-wrap">
+								<div class="offers__text-first">
+									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
+									<p class="offers__text-date">(12.03.2018 — 19.03.2018)</p>
+								</div>
+								<p class="offers__text">Перелёт, питание по системе all inclusive, трансфер</p>
+								<div class="offers__text-third">
+									<p class="offers__text-price">1 259 грн <span>/за 1 человека</span></p>
+									<div class="offers__text-button"><span>Подробнее</span></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -165,12 +225,13 @@
 
 		<section class="advantages">
 			<div class="container">
-				<h2 class="advantages__title">Наши преимущества</h2>
-				<div class="advantages__wrapper">
+				<h2 class="advantages__title advantages__title-desktop">Наши преимущества</h2>
+				<div class="advantages__context">
 					<div class="advantages__picture">
 						<img class="advantage__image" src="./img/advantages-desktop.jpg" alt="Человек, плывущий под водой с маской">
 					</div>
-					<p class="advantages__text">Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный
+					<h2 class="advantages__title advantages__title-tablet">Наши преимущества</h2>
+					<div class="advantages__text">Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный
 						День
 						рождения в путешествии и не
 						могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания,
@@ -179,10 +240,12 @@
 						предложенный
 						вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий
 						персонал.
-						Отличный номер с видом на море.</p>
+						Отличный номер с видом на море.
+						
+					</div>
+					<div class="advantages__text-ball"></div>
 				</div>
 			</div>
-
 		</section>
 
 	</main>
@@ -190,13 +253,24 @@
 		<div class="page-footer__up">
 			<div class="container">
 				<div class="page-footer__up-wrap">
-					<p>ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</p>
+					<p class="page-footer__up-text">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</p>
 					<form class="page-footer__form" action="">
-						<input class="page-footer__input-name" type="text" id="name" name="name" placeholder="Имя">
-						<input class="page-footer__input-email" type="email" id="email" name="email" placeholder="Email">
-						<input class="page-footer__input-phone-num" type="tel" id="phone-num" name="phone-num"
+						<div class="page-footer__form-wrap">
+							<input class="page-footer__input" type="text" id="name" name="name" placeholder="Имя">
+							<input class="page-footer__input" type="email" id="email" name="email" placeholder="Email">
+						</div>
+						<div class="page-footer__form-wrap">
+							<input class="page-footer__input" type="tel" id="phone-num" name="phone-num"
 							placeholder="Телефон">
-						<button class="button contest__submit" type="submit">Получить предложение</button>
+							<select class="page-footer__select" name="" id="">
+								<option value="Турция">Страна тура:</option>
+								<option value="Турция">Турция</option>
+								<option value="Египет">Египет</option>
+								<option value="Шри-Ланка">Шри-Ланка</option>
+								<option value="Доминикана">Доминикана</option>
+							</select>
+						</div>						
+						<button class="page-footer__submit" type="submit">Получить предложение</button>
 					</form>
 				</div>
 			</div>
@@ -204,17 +278,20 @@
 		<div class="page-footer__down">
 			<div class="container">
 				<div class="page-footer__down-wrap">
-					<div class="page-footer__down-item">
+					<div class="page-footer__down-info">
 						<a href="#page-header__logo" class="page-footer__logo">
 							<span class="visually-hidden">КУРАЖ ТУР Логотип</span>
+							<img class="page-header__logo-image" src="./img/logo-footer.png" alt="КУРАЖ ТУР Логотип">
 						</a>
 						<p class="page-footer__text">Кураж тур агенство,которое предоставляет услуги по поиску, оформлению и подбору
 							туров для
 							вас и ваших родных.</p>
-						<p>Создание сайта — </p>
+						<p class="page-footer__author">Создание сайта — 
+							<img class="page-footer__logo-wa" src="./img/logo-wa.png" alt="Логотип">
+						</p>
 					</div>
-					<div class="page-footer__down-item">
-						<h3>Навигация</h3>
+					<div class="page-footer__down-nav">
+						<h3 class="page-footer__down-title">Навигация</h3>
 						<ul class="page-footer__nav-list">
 							<li class="page-footer__nav-item">
 								<a href="#">Главная</a>
@@ -233,8 +310,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="page-footer__down-item">
-						<h3 class="page-footer__support-title">Поддержка</h3>
+					<div class="page-footer__down-add">
+						<h3 class="page-footer__down-title">Поддержка</h3>
 						<ul class="page-footer__support-list">
 							<li class="page-footer__support-item">
 								<a href="#">FAQ</a>
@@ -247,11 +324,11 @@
 							</li>
 						</ul>
 					</div>
-					<div class="page-footer__down-item">
-						<h3 class="page-footer__contacts-title">Контакты</h3>
-						<p class="contacts-text">г. Харьков, ул. Мироносицкая 10а</p>
-						<p class="contacts-text">+38 (099) 990-81-00 (viber, telegram)</p>
-						<div class="page-header__social-list social-list">
+					<div class="page-footer__down-contacts">
+						<h3 class="page-footer__down-title">Контакты</h3>
+						<div class="page-footer__contact contact-address"><span></span>г. Харьков, ул. Мироносицкая 10а</div>
+						<a class="page-footer__contact contact-tel" href="tel:+38(099)9908100"><span></span>+38 (099) 990-81-00 (viber, telegram)</a>
+						<div class="page-footer__social-list social-list">
 							<a class="social-item social-facebook" href="https://www.facebook.com/">
 								<span class="visually-hidden">Фейсбук</span>
 							</a>

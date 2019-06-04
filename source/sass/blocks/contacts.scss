@@ -1,15 +1,68 @@
-.contacts-text {
-	margin-right: 40px;
+.contact-tel {
+	margin-bottom: 10px;
+	padding-left: 27px;
+
 	font-size: 14px;
 	font-weight: 700;
 	color: $white-color;
 
-	&:last-of-type {
-		margin-right: 60px;
+	position: relative;
+	display: block;
+	font-family: "Fira Sans";
+	font-weight: 400;
+
+	::before {
+		content: "";
+		position: absolute;
+		display: block;
+		
+		top: 0;
+		left: 0;
+
+		width: 17px;
+		height: 17px;
+
+		background-image: url("./../../img/icon-tel.png");
+  	background-repeat: no-repeat;
+  	background-position: center;
 	}
 }
 
-.contact-tel {
-	font-family: "Fira Sans";
-	font-weight: 400;
+.contact-address {
+	position: relative;	
+	margin-bottom: 10px;
+	padding-left: 27px;
+
+	font-size: 14px;
+	font-weight: 700;
+	color: $white-color;
+
+	::before {
+		content: "";
+		position: absolute;
+		display: block;
+		
+		top: 0;
+		left: 0;
+
+		width: 13px;
+		height: 18px;
+
+		background-image: url("./../../img/icon-pin.png");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+	}
 }
+
+@media (min-width: $tablet-width) {	
+	.contact-address {
+		margin-right: 40px;
+		margin-bottom: 0;
+	}
+	
+	.contact-tel {	
+		margin-right: 60px;
+		margin-bottom: 0;		
+	}
+}
+

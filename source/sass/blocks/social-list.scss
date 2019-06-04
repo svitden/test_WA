@@ -1,5 +1,6 @@
 .social-list {
-	display: flex;
+  display: flex;
+  align-self: flex-end;
 	list-style: none;
 }
 
@@ -52,5 +53,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {  
+    align-self: center;
   }
 }

@@ -1,18 +1,36 @@
 $pre-tablet-width: 660px;
 $tablet-width: 992px;
 $desktop-width: 1400px;
+$breakpoint-slick: 1677px;
 
 $text-color: #000000;
+$text-grey: #e5e5e5;
+$text-grey-light: #898989;
+$text-grey-dark: #3a3a3a;
 
 $white-color: rgb(255, 255, 255);
+$white-color-40: rgba(255, 255, 255, 0.4);
+
+$black-60: rgba(0, 0, 0, 0.6);
 
 $light-grey: #f8f7f7;
+$light-grey-10: rgba(248, 247, 247, 0.1);
+
+$dark-grey: #6a6a6a;
+$dark-grey-10: rgba(106, 106, 106, 0.1);
+$grey-arrow: #191919;
+
+$dark-dark-grey: rgba(18, 18, 18, 0.1);
 
 $blue-bg: #3689c3;
 $blue-bg-80: rgba(54, 137, 195, 0.8);
 
-$dark-blue-bg: rgba(0, 76, 132, 0.5);
+$blue-bg-darker: #2d6d9a;
+
+$dark-blue-bg: rgb(0, 76, 132);
+$dark-blue-bg-50: rgba(0, 76, 132, 0.5);
 
 $yellow: #fbd341;
-$yellow-dark: #eec83f;
-$dark-blue-bg: #22334d;
+$yellow-dark: #fbc441;
+
+$dark-blue: #22334d;
