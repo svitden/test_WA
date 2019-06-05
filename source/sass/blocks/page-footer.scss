@@ -112,19 +112,28 @@
 }
 
 .page-footer__author {
-	position: relative;
+	display: flex;
 
-	margin-top: 15px;
-	margin-bottom: 28px;
+	margin-top: 20px;
+	margin-bottom: 25px;	
 	font-size: 14px;
 	color: $text-grey;
 }
 
-.page-footer__logo-wa {
-	position: absolute;
-	padding-left: 5px;
-	top: 50%;
-	transform: translate(0, -50%);
+.page-footer__logo-wa {	
+	padding-left: 5px;	
+}
+
+.page-footer__down-nav {
+	border-top: 1px solid $light-grey-10;
+}
+
+.page-footer__down-add {
+	border-top: 1px solid $light-grey-10;
+}
+
+.page-footer__down-contacts {
+	border-top: 1px solid $light-grey-10;
 }
 
 .page-footer__down-title {
@@ -134,8 +143,6 @@
 	padding-bottom: 25px;
 
 	font-size: 18px;
-
-	border-top: 1px solid $light-grey-10;
 }
 
 .page-footer__nav-item {
@@ -161,6 +168,7 @@
 
 .page-footer__contact {
 	margin-bottom: 15px;
+	margin-right: 0;
 }
 
 .page-footer__social-list {
@@ -171,6 +179,43 @@
 
 
 @media (min-width: $pre-tablet-width) {
+	
+	.page-footer__down-info {
+		display: flex;
+		flex-direction: column;			
+	}
+
+	.page-footer__logo {
+		align-self: center;
+	}
+
+	.page-footer__text {
+		text-align: center;
+	}
+
+	.page-footer__author {
+		align-self: center;
+	}
+
+	.page-footer__nav-wrap {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid $light-grey-10;
+	}
+
+	
+	.page-footer__down-nav {
+		border-top: none;
+	}
+
+	.page-footer__down-add {
+		border-top: none;
+	}
+
+	.page-footer__down-contacts {
+		border-top: none;
+	}
+
 	.page-footer__form {		
 		padding: 50px 30px;
 	}
@@ -199,6 +244,41 @@
 	
 
 @media (min-width: $tablet-width) {
+	.page-footer__down-wrap {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1170px;
+	}
+
+	.page-footer__down-info {		
+		max-width: 34%;
+	}
+
+	.page-footer__logo {
+		align-self: auto;
+	}
+
+	.page-footer__text {
+		text-align: left;
+	}
+
+	.page-footer__author {
+		align-self: auto;
+	}
+
+	.page-footer__nav-wrap {
+		width: 60%;
+		border-top: none;
+	}
+
+	.page-footer__down-nav {
+		margin-right: 5%;
+	}
+	
+	.page-footer__down-add {
+		margin-right: 5%;
+	}
+
 	.page-footer__form {
 		flex-direction: row;
 		align-items: flex-start;
@@ -219,4 +299,23 @@
 		}
 	}
 
+}
+
+@media (min-width: $desktop-width) {
+	.page-footer__down-info {
+		max-width: 28%;
+	}
+
+	.page-footer__nav-wrap {
+		justify-content: space-between;
+		width: 682px;
+	}
+
+	.page-footer__down-nav {
+		margin-right: 0;
+	}
+	
+	.page-footer__down-add {
+		margin-right: 0;
+	}
 }
