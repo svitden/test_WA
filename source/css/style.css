@@ -483,13 +483,28 @@ template {
     justify-content: space-between; }
   .main-nav__item {
     position: relative;
-    padding: 13px 24px;
+    padding: 13px 30px;
     border: none;
     border-radius: 10px; }
     .main-nav__item:hover {
       background-color: #fbc441; }
     .main-nav__item:hover .main-nav__sub-menu {
       display: block; }
+  .main-nav__item-icon {
+    position: relative;
+    width: 15px;
+    height: 15px; }
+    .main-nav__item-icon:after {
+      position: absolute;
+      content: "";
+      top: 2px;
+      right: -19px;
+      width: 10px;
+      height: 10px;
+      border-right: 1px solid #191919;
+      border-bottom: 1px solid #191919;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
   .main-nav__sub-menu {
     display: none;
     position: absolute;
@@ -929,14 +944,48 @@ template {
   margin-bottom: 15px;
   padding: 10px 10px 10px 13px;
   font-size: 18px;
-  color: #e5e5e5;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+  .page-footer__input::-webkit-input-placeholder {
+    text-overflow: ellipsis;
+    color: #e5e5e5;
+    opacity: 1;
+    transition: opacity 300ms; }
+  .page-footer__input::-moz-placeholder {
+    text-overflow: ellipsis;
+    color: #e5e5e5;
+    opacity: 1;
+    transition: opacity 300ms; }
+  .page-footer__input:-ms-input-placeholder {
+    text-overflow: ellipsis;
+    color: #e5e5e5;
+    opacity: 1;
+    transition: opacity 300ms; }
+  .page-footer__input::-ms-input-placeholder {
+    text-overflow: ellipsis;
+    color: #e5e5e5;
+    opacity: 1;
+    transition: opacity 300ms; }
+  .page-footer__input::placeholder {
+    text-overflow: ellipsis;
+    color: #e5e5e5;
+    opacity: 1;
+    transition: opacity 300ms; }
+  .page-footer__input:focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .page-footer__input:focus::-moz-placeholder {
+    opacity: 0; }
+  .page-footer__input:focus:-ms-input-placeholder {
+    opacity: 0; }
+  .page-footer__input:focus::-ms-input-placeholder {
+    opacity: 0; }
+  .page-footer__input:focus::placeholder {
+    opacity: 0; }
 
-.page-footer__input[placeholder] {
-  text-overflow: ellipsis;
-  color: #e5e5e5; }
+.page-footer__select option {
+  color: #000000;
+  background-color: white; }
 
 .page-footer__submit {
   padding: 10px 15px;
@@ -951,7 +1000,7 @@ template {
 
 .page-footer__select {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   padding: 10px 10px 10px 13px;
   font-size: 18px;
   color: #e5e5e5;
@@ -1032,6 +1081,8 @@ template {
   border-top: 1px solid rgba(248, 247, 247, 0.1); }
 
 @media (min-width: 660px) {
+  .page-footer__down-wrap {
+    padding-bottom: 0; }
   .page-footer__down-info {
     display: flex;
     flex-direction: column; }
@@ -1069,6 +1120,12 @@ template {
       background-color: #fbc441; } }
 
 @media (min-width: 992px) {
+  .page-footer__form {
+    align-items: center; }
+  .page-footer__select {
+    margin-bottom: 0; }
+  .page-footer__input-email {
+    margin-bottom: 0; }
   .page-footer__down-wrap {
     flex-direction: row;
     justify-content: space-between;
@@ -1090,17 +1147,14 @@ template {
     margin-right: 5%; }
   .page-footer__form {
     flex-direction: row;
-    align-items: flex-start; }
+    justify-content: space-between; }
   .page-footer__input {
-    margin-right: 30px;
     padding-left: 13px;
     font-size: 18px;
     color: #000000;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
-    .page-footer__input:last-of-type {
-      margin-right: 0; } }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); } }
 
 @media (min-width: 1170px) {
   .page-footer__down-info {
@@ -1112,6 +1166,25 @@ template {
     margin-right: 0; }
   .page-footer__down-add {
     margin-right: 0; } }
+
+@media (min-width: 1677px) {
+  .page-footer__form-wrap {
+    display: flex;
+    flex-direction: row; }
+  .page-footer__input-name {
+    width: 140px;
+    margin-right: 30px;
+    margin-bottom: 0; }
+  .page-footer__input-email {
+    width: 190px;
+    margin-bottom: 0; }
+  .page-footer__input-tel {
+    width: 152px;
+    margin-right: 30px;
+    margin-bottom: 0; }
+  .page-footer__select {
+    width: 180px;
+    margin-bottom: 0; } }
 
 .slick-prev:before {
   position: absolute;

@@ -37,21 +37,33 @@
 }
 
 .page-footer__input {
-	align-self: stretch;	
+	align-self: stretch;
 
 	margin-bottom: 15px;
 	padding: 10px 10px 10px 13px;
 	font-size: 18px;
-	color: $text-grey;
 
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid $white-color-40;
+
+	&::placeholder {
+		text-overflow:ellipsis;
+		color: $text-grey;
+		opacity: 1;
+    transition: opacity 300ms;
+	}
+
+	&:focus {
+		&::placeholder {
+			opacity: 0;
+		}
+	}
 }
 
-.page-footer__input[placeholder] {
-	text-overflow:ellipsis;
-	color: $text-grey;
+.page-footer__select option {
+	color: $text-color;
+	background-color: $white-color;
 }
 
 .page-footer__submit {
@@ -72,7 +84,7 @@
 .page-footer__select {
 	display: block;
 
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 	padding: 10px 10px 10px 13px;
 	font-size: 18px;
 	color: $text-grey;
@@ -83,6 +95,7 @@
 }
 
 .page-footer__down {
+	
 	color: $white-color;
 
 	background-color: $dark-blue;
@@ -179,7 +192,9 @@
 
 
 @media (min-width: $pre-tablet-width) {
-	
+	.page-footer__down-wrap {
+		padding-bottom: 0;
+	}
 	.page-footer__down-info {
 		display: flex;
 		flex-direction: column;			
@@ -244,6 +259,18 @@
 	
 
 @media (min-width: $tablet-width) {
+	.page-footer__form {
+		align-items: center;
+	}
+	
+	.page-footer__select {
+		margin-bottom: 0;
+	}
+
+	.page-footer__input-email {
+		margin-bottom: 0;
+	}
+	
 	.page-footer__down-wrap {
 		flex-direction: row;
 		justify-content: space-between;
@@ -281,11 +308,10 @@
 
 	.page-footer__form {
 		flex-direction: row;
-		align-items: flex-start;
+		justify-content: space-between;		
 	}
 
-	.page-footer__input {
-		margin-right: 30px;
+	.page-footer__input {		
 		padding-left: 13px;
 		font-size: 18px;
 		color: $text-color;
@@ -294,14 +320,12 @@
 		border: none;
 		border-bottom: 1px solid $white-color-40;
 
-		&:last-of-type {
-			margin-right: 0;
-		}
 	}
 
 }
 
 @media (min-width: $desktop-width) {
+	
 	.page-footer__down-info {
 		max-width: 28%;
 	}
@@ -319,3 +343,34 @@
 		margin-right: 0;
 	}
 }
+
+
+@media (min-width: $breakpoint-slick) {
+	.page-footer__form-wrap {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.page-footer__input-name {
+		width: 140px;
+		margin-right: 30px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__input-email {
+		width: 190px;		
+		margin-bottom: 0;
+	}
+
+	.page-footer__input-tel {
+		width: 152px;
+		margin-right: 30px;
+		margin-bottom: 0;
+	}
+
+	.page-footer__select {
+		width: 180px;		
+		margin-bottom: 0;
+	}
+}
+ 

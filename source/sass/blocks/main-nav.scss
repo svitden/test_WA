@@ -47,7 +47,7 @@
 
 	.main-nav__item {
 		position: relative;
-		padding: 13px 24px;
+		padding: 13px 30px;
 
 		border: none;
 		border-radius: 10px;
@@ -58,6 +58,29 @@
 
 		&:hover .main-nav__sub-menu {
 			display: block;
+		}
+	}
+
+	.main-nav__item-icon {
+		position: relative;
+		
+
+		width: 15px;
+		height: 15px;
+
+		&:after {
+			position: absolute;
+			content: "";
+			
+			top: 2px;
+			right: -19px;
+
+			width: 10px;
+			height: 10px;
+
+			border-right: 1px solid $grey-arrow;
+    	border-bottom: 1px solid $grey-arrow;
+    	transform: rotate(45deg);
 		}
 	}
 

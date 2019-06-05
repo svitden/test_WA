@@ -17,9 +17,11 @@
 @import "./blocks/slick-style.scss";
 
 body {
-	@include margin0-padding0;
+  @include margin0-padding0;
+  
   min-width: 290px;
 
+  
   font-family: "Arial", sans-serif;
   font-size: 16px;
   color: $text-color;
