@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
+	<meta http-equiv="Content-Security-Policy" content="default-src *;
+	                      style-src * 'self' 'unsafe-inline' 'unsafe-eval';
+	                      script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+	
 	<link rel="preload" href="/fonts/fira-sans-v9-cyrillic_latin-600.eot" as="font" crossorigin="anonymous">
 	<link rel="preload" href="/fonts/fira-sans-v9-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
 	<link rel="preload" href="/fonts/fira-sans-v9-cyrillic_latin-600.woff" as="font" crossorigin="anonymous">
@@ -357,7 +361,7 @@
 		</div>
 	</footer>
 
-	<script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	

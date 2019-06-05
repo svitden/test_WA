@@ -80,12 +80,12 @@ gulp.task("html", function () {
       include()
     ]
     ))
-    .pipe(htmlmin({
-      collapseWhitespace: true,
-      collapseInlineTagWhitespace: true,
-      removeComments: true,
-      removeEmptyAttributes: true,
-    }))
+    // .pipe(htmlmin({
+    //   collapseWhitespace: true,
+    //   collapseInlineTagWhitespace: true,
+    //   removeComments: true,
+    //   removeEmptyAttributes: true,
+    // }))
     .pipe(gulp.dest("build"));
 });
 
@@ -100,7 +100,8 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/js/**",
     "source/*.ico",
-    "source/slick/**"
+    "source/slick/**",
+    "source/*.html",
   ], {
       base: "source"
     })
@@ -147,7 +148,7 @@ gulp.task("build", gulp.series(
   "css",
   "images",
   "webp",  
-  // "html"
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
