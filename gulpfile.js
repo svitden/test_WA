@@ -80,12 +80,12 @@ gulp.task("html", function () {
       include()
     ]
     ))
-    // .pipe(htmlmin({
-    //   collapseWhitespace: true,
-    //   collapseInlineTagWhitespace: true,
-    //   removeComments: true,
-    //   removeEmptyAttributes: true,
-    // }))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      collapseInlineTagWhitespace: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -121,8 +121,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    // .pipe(csso())
-    // .pipe(rename("style.min.css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());

@@ -24,8 +24,8 @@
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-	<link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="css/style.min.css" crossorigin="anonymous" />
+	
 	<title>Test WA</title>
 </head>
 
@@ -36,7 +36,10 @@
 			<div class="page-header__wrap">
 				<a href="#" id="page-header__logo" class="page-header__logo">
 					<span class="visually-hidden">КУРАЖ ТУР Логотип</span>
-					<img class="page-header__logo-image" src="./img/logo.png" alt="КУРАЖ ТУР Логотип">
+					<picture>
+						<source type="image/webp" srcset="./img/logo.webp">
+						<img class="page-header__logo-image" src="./img/logo.png" alt="КУРАЖ ТУР Логотип">
+					</picture>					
 				</a>
 				<div class="page-header__context-wrap">
 					<div class="page-header__contacts">
@@ -115,8 +118,11 @@
 		<div class="page-header__slider">
 			<div>
 				<div class="page-header__slider-picture">
-					<img class="page-header__slider-image" data-lazy="./img/banner1-desktop.jpg" src="./img/banner1-desktop.jpg"
+					<picture>
+						<source type="image/webp" srcset="./img/banner1-desktop.webp">
+						<img class="page-header__slider-image" data-lazy="./img/banner1-desktop.jpg" src="./img/banner1-desktop.jpg"
 						alt="Берег тропического острова">
+					</picture>					
 					<div class="page-header__slider-text">
 						<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
 						<a href="#" class="page-header__button">Получить предложение</a>
@@ -125,8 +131,11 @@
 			</div>
 			<div>
 				<div class="page-header__slider-picture">
-					<img class="page-header__slider-image" data-lazy="./img/banner2-desktop.jpg" src="./img/banner2-desktop.jpg"
+					<picture>
+						<source type="image/webp" srcset="./img/banner2-desktop.webp">
+						<img class="page-header__slider-image" data-lazy="./img/banner2-desktop.jpg" src="./img/banner2-desktop.jpg"
 						alt="Под водой">
+					</picture>
 					<div class="page-header__slider-text">
 						<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
 						<a href="#" class="page-header__button">Получить предложение</a>
@@ -135,8 +144,11 @@
 			</div>
 			<div>
 				<div class="page-header__slider-picture">
-					<img class="page-header__slider-image" data-lazy="./img/banner3-desktop.jpg" src="./img/banner3-desktop.jpg"
-						alt="Пирамины">
+					<picture>
+						<source type="image/webp" srcset="./img/banner1-desktop.webp">
+						<img class="page-header__slider-image" data-lazy="./img/banner3-desktop.jpg" src="./img/banner3-desktop.jpg"
+							alt="Пирамиды">
+					</picture>
 					<div class="page-header__slider-text">
 						<p class="page-header__text">Лучшие предложения по солнечному Египту из Харькова</p>
 						<a href="#" class="page-header__button">Получить предложение</a>
@@ -158,9 +170,10 @@
 				<div class="offers__list">
 					<div>
 						<div class="offers__item">
-							<div class="offers__picture">
+							<picture class="offers__picture">
+								<source type="image/webp" srcset="./img/hots1-desktop.webp">
 								<img src="./img/hots1-desktop.jpg" alt="Голубая лагуна">
-							</div>
+							</picture>
 							<div class="offers__text-wrap">
 								<div class="offers__text-first">
 									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
@@ -176,9 +189,10 @@
 					</div>
 					<div>
 						<div class="offers__item">
-							<div class="offers__picture">
+							<picture class="offers__picture">
+								<source type="image/webp" srcset="./img/hots2-desktop.webp">
 								<img src="./img/hots2-desktop.jpg" alt="Голубая лагуна">
-							</div>
+							</picture>
 							<div class="offers__text-wrap">
 								<div class="offers__text-first">
 									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
@@ -194,9 +208,10 @@
 					</div>
 					<div>
 						<div class="offers__item">
-							<div class="offers__picture">
+							<picture class="offers__picture">
+								<source type="image/webp" srcset="./img/hots1-desktop.webp">
 								<img src="./img/hots1-desktop.jpg" alt="Голубая лагуна">
-							</div>
+							</picture>
 							<div class="offers__text-wrap">
 								<div class="offers__text-first">
 									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
@@ -212,9 +227,10 @@
 					</div>
 					<div>
 						<div class="offers__item">
-							<div class="offers__picture">
+							<picture class="offers__picture">
+								<source type="image/webp" srcset="./img/hots2-desktop.webp">
 								<img src="./img/hots2-desktop.jpg" alt="Голубая лагуна">
-							</div>
+							</picture>
 							<div class="offers__text-wrap">
 								<div class="offers__text-first">
 									<p class="offers__text-name">8 марта в Cyrene Sharm hotel</p>
@@ -236,9 +252,10 @@
 			<div class="container">
 				<h2 class="advantages__title advantages__title-desktop">Наши преимущества</h2>
 				<div class="advantages__context">
-					<div class="advantages__picture">
+					<picture class="advantages__picture">
+						<source type="image/webp" srcset="./img/advantages-desktop.webp">
 						<img class="advantage__image" src="./img/advantages-desktop.jpg" alt="Человек, плывущий под водой с маской">
-					</div>
+					</picture>
 					<h2 class="advantages__title advantages__title-tablet">Наши преимущества</h2>
 					<div class="advantages__text">Очень долго подбирали разные варианты для того, чтобы отпраздновать свой
 						юбилейный
@@ -295,14 +312,20 @@
 					<div class="page-footer__down-info">
 						<a href="#page-header__logo" class="page-footer__logo">
 							<span class="visually-hidden">КУРАЖ ТУР Логотип</span>
-							<img class="page-header__logo-image" src="./img/logo-footer.png" alt="КУРАЖ ТУР Логотип">
+							<picture>
+								<source type="image/webp" srcset="./img/logo-footer.webp">
+								<img class="page-header__logo-image" src="./img/logo-footer.png" alt="КУРАЖ ТУР Логотип">
+							</picture>							
 						</a>
 						<p class="page-footer__text">Кураж тур агенство,которое предоставляет услуги по поиску, оформлению и подбору
 							туров для
 							вас и ваших родных.</p>
 						<div class="page-footer__author">
 							<p>Создание сайта —</p>
-							<img class="page-footer__logo-wa" src="./img/logo-wa.png" alt="Логотип">
+							<picture>
+								<source type="image/webp" srcset="./img/logo-wa.webp">
+								<img class="page-footer__logo-wa" src="./img/logo-wa.png" alt="Логотип">
+							</picture>							
 						</div>
 					</div>
 					<div class="page-footer__nav-wrap">

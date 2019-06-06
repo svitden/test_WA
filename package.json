@@ -10,8 +10,10 @@
   },
   "author": "Svitlana Denysenko",
   "license": "ISC",
+  "engines": {
+    "node": "8.15"
+  },
   "dependencies": {
-    "gulp-install": "^1.1.0",
     "jquery": "^3.4.1",
     "gulp-htmlmin": "^5.0.1"
   },
