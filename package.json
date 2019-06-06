@@ -17,6 +17,11 @@
     "jquery": "^3.4.1",
     "gulp-htmlmin": "^5.0.1"
   },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "devDependencies": {
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",

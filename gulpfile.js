@@ -100,8 +100,7 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/js/**",
     "source/*.ico",
-    "source/slick/**",
-    "source/Procfile",
+    "source/slick/**"
   ], {
       base: "source"
     })

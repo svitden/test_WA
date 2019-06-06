@@ -42,6 +42,7 @@
 	margin-bottom: 15px;
 	padding: 10px 10px 10px 13px;
 	font-size: 18px;
+	color: $text-grey !important;
 
 	background-color: transparent;
 	border: none;
@@ -49,9 +50,13 @@
 
 	&::placeholder {
 		text-overflow:ellipsis;
-		color: $text-grey;
+		color: $text-grey; 
 		opacity: 1;
     transition: opacity 300ms;
+	}
+
+	&:-ms-input-placeholder {
+		color: $text-grey !important; /* IE11 needs the !important flag */
 	}
 
 	&:focus {

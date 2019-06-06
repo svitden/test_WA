@@ -34,6 +34,48 @@
   transform: rotate(45deg);
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: 5px;
+  
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+} 
+
+  .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '•';
+  text-align: center;
+
+  opacity: .6;
+  color: $white-color;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+  .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: $yellow;
+  }
+
 @media (min-width: $pre-tablet-width) {
   .slick-prev {
     left: -40px;
@@ -56,5 +98,39 @@
   .offers .slick-slide {
     margin: 0px 20px;
   }
+
 }
 
+@media (min-width: $tablet-width) {  
+  .slick-dots {    
+    bottom: 15px;
+    left: -250px;   
+  }
+
+  .slick-dots li button:before {    
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .slick-dots {    
+    bottom: 15px;
+    left: -300px;   
+  }
+
+  .slick-dots li button:before {    
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $breakpoint-slick) {
+  .slick-dots {    
+    bottom: 15px;
+    left: -500px;   
+  }
+
+  .slick-dots li button:before {    
+    font-size: 15px;
+  }
+}

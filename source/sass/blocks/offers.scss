@@ -97,9 +97,12 @@
 
 .offers__text {
   margin-bottom: 30px;
+  width: 100%;
 
   font-size: 14px;
   color: $text-grey-dark;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .offers__text-third {

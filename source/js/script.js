@@ -8,8 +8,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
     fade: true,
-    // autoplay: true,
-    // autoplaySpeed: 3000,     
+    autoplay: true,
+    autoplaySpeed: 3000,     
   });
 
   $(".offers__list").slick({
