@@ -1,20 +1,20 @@
-@import "./normalize.scss";
-@import "./variables.scss";
-@import "./mixins.scss";
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
 
 
-@import "./container.scss";
-@import "./blocks/page-header.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/social-list.scss";
-@import "./blocks/sub-menu.scss";
-@import "./blocks/advantages.scss";
-@import "./blocks/main.scss";
-@import "./blocks/offers.scss";
+@import "container.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social-list.scss";
+@import "blocks/sub-menu.scss";
+@import "blocks/advantages.scss";
+@import "blocks/main.scss";
+@import "blocks/offers.scss";
 
-@import "./blocks/page-footer.scss";
-@import "./blocks/slick-style.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/slick-style.scss";
 
 body {
   @include margin0-padding0;
