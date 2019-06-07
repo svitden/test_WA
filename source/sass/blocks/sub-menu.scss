@@ -2,11 +2,13 @@
 	@include margin0-padding0;	
 
 	list-style: none;
+	white-space: nowrap;
 }
 
 .sub-menu__item {
 	padding: 5px 0 5px 10px;
-	
+	list-style: none important!;
+	white-space: normal;
 }
 
 .sub-menu__item > a {	
