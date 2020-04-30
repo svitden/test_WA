@@ -14,7 +14,7 @@
     "node": "8.15"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "gulp-htmlmin": "^5.0.1"
   },
   "browserslist": [
